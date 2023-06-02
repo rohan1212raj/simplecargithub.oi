@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cars</title>
+<link rel="stylesheet" href="flip.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+<style>
+      .home{
+max-width: 1550px;
+margin: auto;
+width: 100%;
+min-height: 640px;
+align-items: center;
+background-image: url(img/carbackground.webp);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center left;
+}
+h2{
+   font-size: 1.5rem;
+   color: #444;
+   margin-left: 15rem;
+}
+.link{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   margin-left: 14rem;
+   margin-right: 14rem;
+   border-bottom:1px solid #444;
+}
+.link a{
+   color: #444;
+   margin: 1rem;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.link a:hover{
+   color: #00afa0;
+   padding-top: .5rem;
+   transition: 0.5s;
+}
+
+.link .active{
+   color: #28d4c6;
+}
+
+
+
+
+
+@media (max-width:900px){
+   .link{
+      display: flex;
+      margin-left: 1.2rem;
+      margin-right: 1rem;
+      border-bottom: 1px solid #444;
+   }
+   h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-left: 2.2rem;
+}
+   
+}
+@media (max-width:450px){
+   .link {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0rem;
+    border-bottom: 1px solid #444;
+}
+h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-left: 8rem;
+}
+}
+
+
+/* logo add in css */
+
+
+      .main-logo{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+   }
+   .box-logo{
+      width: 20%;
+      height: 8rem;
+      font-size: 2rem;
+      box-sizing: border-box;
+      border: 1px solid #e1e1e1;
+      /* border-radius: .5rem; */
+   }
+        .box-logo img{
+      height: 5rem;
+      width: 9rem;
+      margin-left: 2rem;
+      object-fit: cover;
+      object-fit: contain;
+      cursor: pointer;
+      padding-top: 1rem;
+   }
+        .box-logo h1{
+         font-size: 1.2rem;
+         font-family: 'Times New Roman', Times,;
+         text-align: center;
+         font-weight: 500;
+         /* margin-right: 5rem; */
+         cursor: pointer;
+        }
+        @media (max-width:1050px){
+            .box-logo img {
+            height: 4rem;
+            width: 6rem;
+            margin-left: 3rem;
+            object-fit: contain;
+            padding-top: 1rem;
+        }
+        }
+        @media (max-width:850px){
+      .box-logo {
+         width: 25%;
+         height: 8rem;
+         box-sizing: border-box;
+         /* border: 2px solid; */
+         /* border-radius: .5rem; */
+     }
+
+      .box-logo img {
+      height: 4rem;
+      width: 5rem;
+      margin-left: 4rem;
+      object-fit: contain;
+      padding-top: 1rem;
+   }        
+   }
+   @media (max-width:780px){
+            .box-logo {
+      width: 25%;
+      height: 8rem;
+      box-sizing: border-box;
+      /* border: 2px solid; */
+      /* border-radius: .5rem;      */
+   }
+        .main-logo {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        }
+        .box-logo {
+        width: 25%;
+        height: 8rem;
+        box-sizing: border-box;
+        /* border: 2px solid; */
+        /* border-radius: .5rem; */
+    }
+    .box-logo img{
+        height: 5rem;
+        width: 6.5rem;
+        object-fit: contain;
+        padding-top: 1rem;
+        margin-left: 1.3rem;
+    }
+        }
+
+    @media(max-width: 650px){
+        .box-logo img {
+        height: 5rem;
+        width: 6rem;
+        margin-left: .8rem;
+        object-fit: contain;
+        padding-top: 1rem;
+    }
+    /* .box-logo h1 {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times,;
+    text-align: center;
+    font-weight: 500;
+    margin-left: -1rem;
+} */
+    }
+
+    @media(max-width: 570px){
+        .box-logo {
+    width: 25%;
+    box-sizing: border-box;
+    /* border: 2px solid; */
+    /* border-radius: .5rem; */
+}
+.box-logo h1 {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times,;
+    text-align: center;
+    font-weight: 500;
+    margin-left: -1rem;
+}
+    }
+
+    @media(max-width: 450px){
+        .box-logo {
+    width: 40%;
+    box-sizing: border-box;
+    /* border: 2px solid; */
+    /* border-radius: .5rem; */
+}
+    }
+
+    @media(max-width: 280px){
+        .box-logo img {
+    width: 5rem;
+    margin-left: .9rem;
+    object-fit: contain;
+    padding-top: 1rem;
+}
+    }
+
+
+/* logo add in css */
+</style>
+</head>
+<body>
+
+   <header>
+      <div class="nav container">
+      <i class="fa fa-bars" id="menu-icon"></i>
+      <a href="carpoint.html" class="logo">Car<span>point</span></a>
+      <ul class="navbar">
+        <li><a href="home.html" >Home</a></li>
+        <li><a href="car.html" class="active">Cars</a></li>
+        <li><a href="bike.html">Bike</a></li>
+        <li><a href="part.html">parts</a></li>
+        <li><a href="login1.html">Login/Signup</a></li>
+      </ul>
+   
+      <i class="fa fa-search" id="search-icon"></i>
+      <div class="search-box container">
+         <input type="search" name="" id="" placeholder="search hear....">
+      </div>
+      </div> 
+   </header> 
+
+   <section class="home" id="home">
+<div class="home-text">    
+</div>
+</section>
+
+   <section class="parts" id="parts">
+      <div class="heading">
+         <!-- <span>What we Offer </span>
+         <h2>Our Car Is Always Excellent</h2>
+         <P>There are around one billion cars in use worldwide. Car usage is increasing rapidly, especially in China, India, and other newly industrialized countries</P> -->
+      </div>
+
+
+      <h2>Featured Cars</h2>
+      <div class="link">
+        <a href="car.html" class="active">POPULAR </a>
+        <a href="JUSTLAUNCHED.html">JUSTLAUNCHED</a>
+        <a href="upcoming.html">UPCOMING</a>
+      </div>
+
+
+
+      <div class="parts-container container">
+         <div class="box">
+            <img src="img/4bmw.jpg" alt="">
+            <h3>Car for BMW</h3>
+            <span>Rs. 54000.99laks</span>
+            <!-- <i class="fa-solid fa-star">(6 Reviews)</i> -->
+            <!-- <a href="#" class="btn">Buy Now</a> -->
+            <a href="#" class="details">Viwe Details</a>
+         </div>
+      
+         <div class="box">
+            <img src="img/6bugatti.webp" alt="">
+            <h3>Car for Bugatti</h3>
+            <span>Rs. 15000.99</span>
+            <!-- <i class="fa-solid fa-star">(6 Reviews)</i> -->
+            <!-- <a href="#" class="btn">Buy Now</a> -->
+            <a href="#" class="details">Viwe Details</a>
+         </div>
+      
+         <div class="box">
+            <img src="img/8thar.jpg" alt="">
+            <h3>Car for Thar</h3>
+            <span>Rs. 520.99</span>
+            <!-- <i class="fa-solid fa-star">(6 Reviews)</i> -->
+            <!-- <a href="#" class="btn">Buy Now</a> -->
+            <a href="#" class="details">Viwe Details</a>
+         </div>
+      
+         <!-- <div class="box">
+            <img src="img/10dzire.webp" alt="">
+            <h3>Car for Dzire</h3>
+            <span>Rs. 800.99</span>
+            <i class="fa-solid fa-star">(6 Reviews)</i>
+            <a href="#" class="btn">Buy Now</a>
+            <a href="#" class="details">Viwe Details</a>
+         </div> -->
+
+        
+         <div class="main-logo">
+            <div onclick="window.location.href = 'logo audi.html'" class="box-logo">
+                <img src="logo/audi.jpg" alt="">
+                <h1>Audi</h1>
+            </div>
+         
+            <div onclick="window.location.href='logo clickBMW.html'" class="box-logo">
+                <img  src="logo/bmw.jpg" alt="">
+                <h1>BMW</h1>
+            </div>
+         
+            <div onclick="window.location.href='logo honda.html '" class="box-logo">
+                <img src="logo/honda.jpg" alt="">
+                <h1>Honda</h1>
+            </div>
+         
+            <div onclick="window.location.href='logo mahindra.html'" class="box-logo">
+                <img src="logo/mahindra.jpg" alt="">
+                <h1>Mahindra</h1>
+            </div>
+         
+            <div onclick="window.location.href='logo tata.html'" class="box-logo">
+                <img src="logo/tata.jpg" alt="">
+                <h1>Tata</h1>
+            </div>
+         
+            <div onclick="window.location.href='logo hyundai.html'" class="box-logo">
+                <img src="logo/hyundai.jpg" alt="">
+                <h1>Hyundai</h1>
+            </div>
+         
+            <div onclick="window.location.href='logo jeep.html'" class="box-logo">
+                <img src="logo/jeep.jpg" alt="">
+                <h1>Jeep</h1>
+            </div>
+         
+            <div onclick="window.location.href='logo mg.html'" class="box-logo">
+                <img src="logo/mg.jpg" alt="">
+                <h1>Mg</h1>
+            </div>
+            <div onclick="window.location.href='logo lamborghini.html'" class="box-logo">
+                <img src="logo/lamborghini.jpg" alt="">
+                <h1>Lamborghini</h1>
+            </div>
+            <div onclick="window.location.href='logo land rover.html'" class="box-logo">
+                <img src="logo/land-rover.jpg" alt="">
+                <h1>Land Rover</h1>
+            </div>
+         </div>
+
+
+   
+      <script src="flip.js"></script>             
+</body>
+</html>

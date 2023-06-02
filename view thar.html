@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="flip.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+ <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> webiset </title>
+
+
+<style>
+    .view{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 5rem;
+     
+    }
+
+    .view h1{
+     margin-left: 28rem;
+    }
+    .view p{
+      max-width: 62rem;
+      margin-left: 10rem;
+      font-weight: 500;
+
+    }
+    .view img{
+      height: 40vh;
+      width: 30%;
+      margin-left: 10rem;
+      /* object-fit: cover; */
+    }
+   .view h3{
+      margin-top: 20rem;
+      margin-left: -15rem;
+      line-height: 2rem;
+      font-size: 1rem;
+      color: red;
+   }
+
+    .view .price{
+      /* background: red; */
+      gap: 2rem;
+      margin-left: 10rem;
+      line-height: 2rem; 
+   }
+    .view .price p{
+      margin-top: 1rem;
+      display: flex;
+      margin-left: 1px;
+      color: #333;
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+    .view .price span{
+      margin-left: 10rem;
+    }
+    .view .price h5{
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .view .price h6{
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+    
+    .loan{
+   display: flex;
+   flex-wrap: wrap;
+   border: 2px solid rgb(218, 205, 205);
+   border: 2px solid rgb(218, 205, 205);
+   margin-bottom: 1rem;
+   margin: 2rem;
+  
+}
+.loan img{
+height: 100px;
+width: 120px;
+cursor: pointer;
+padding: 1rem;
+margin-left: -1rem;
+}
+.loan h2{
+   position: relative;
+   margin-left: 5rem;
+   margin-top: 1rem;
+   cursor: pointer;
+   
+}
+    
+.loan a{
+   margin-top: 3rem;
+   display: flex;
+   margin-left: -11.1rem;
+   color: rgb(32, 32, 221);
+   line-height: 2rem;
+}
+   
+
+
+
+
+
+
+
+
+
+@media (max-width:1050px){
+      .view h1 {
+    margin-left: 15rem;
+}
+.view p {
+    max-width: 62rem;
+    margin-left: 1rem;
+}
+.view img {
+    height: 40vh;
+    width: 30%;
+    margin-left: 7rem;
+}
+
+}
+    @media (max-width:1000px){
+      .view {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+.view h1 {
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.view p {
+   line-height: 1.1rem;
+}
+.view img {
+    height: 40vh;
+    width: 80%;
+    margin-left: 4rem;
+}
+.view h3 {
+    margin-top: 26rem;
+    margin-left: -5rem;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+}
+
+   @media (max-width:450px){
+      .view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+      .view h1 {
+    margin-left: .5rem;
+    max-height: 20rem;
+}
+.view img {
+    height: 50vh;
+    width: 100%;
+    margin-left: 10px;
+}
+.loan h2 {
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.loan a{
+   margin-left: 2rem;
+   margin-top: 0;
+}
+.view .price {
+    /* background: red; */
+    gap: 2rem;
+    margin-left: 0rem;
+    line-height: 2rem;
+}
+.view h3 {
+    margin-top: 22rem;
+    margin-left: -15rem;
+    font-size: 1rem;
+}
+   }
+    
+</style>
+
+</head>
+<body>
+<header>
+   <div class="nav container">
+   <i class="fa fa-bars" id="menu-icon"></i>
+   <a href="#" class="logo">Car<span>point</span></a>
+   <ul class="navbar">
+     <li><a href="home.html" class="active">Home</a></li>
+     <li><a href="car.html">Cars</a></li>
+     <li><a href="bike.html">Bike</a></li>
+     <li><a href="part.html">parts</a></li>
+     <li><a href="login1.html">Login/Signup</a></li>
+   </ul>
+
+    <form action="car.html" method="get">
+   <i class="fa fa-search" id="search-icon"></i>
+   <div class="search-box container">
+      <input type="search" name="" id="" placeholder="Try searching for all barnds car and bike">
+
+   </form>
+
+   </div>
+   </div> 
+</header>  
+<section class="home" id="home">
+<div class="home-text">
+<h1> We have Everything <br> Your <span>car</span>Need</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,  odit.</p> 
+<a href="#" class="btn">Discover Now</a>     
+</div>
+</section>
+
+<section class="view">
+    <h1>Mahindra Thar On Road Price in Delhi</h1>
+    <p>The Mahindra Thar Price in Delhi starts from ₹ 11.62 Lakh and goes upto ₹ 19.85 Lakh. Thar is a SUV, offered with a choice of 1497 cc, 2184 cc Diesel
+    and 1997 cc Petrol engine options. The Thar on road price in Delhi for 1497 cc Diesel engine ranges between ₹ 11.62 - 13.33 Lakh while 2184 cc Diesel</p>
+    <img src="img/8thar.jpg" alt="">
+    <h3>Thar <br>Mahindra</h3>
+    
+    <div class="price">
+      <p>Ex-Showroom price <span>₹9,99,000</span></p>
+      <p>Individul Registration</p>
+      <h5>RTO <span>₹92,243</span></h5>
+      <h5>MCD <span>₹4,000</span></h5>
+      <hr>
+      <h5>Total Registration Charges <span>₹96,243</span></h5>
+      <h6>Insurance<span>₹65,000</span></h6>
+      <p>Other Charges</p>
+      <h5>Hypothecation Charges <span>₹1,500</span></h5>
+      <h5>FASTag <span>₹500</span></h5>
+      <hr>
+      <h5>Total Other Charges <span>₹2,000</span></h5>
+    </div>
+
+</section>
+
+
+
+
+<div class="loan">
+   <img src="img/lone img.png" alt="">
+   <h2>Need Car Loan?</h2>
+   <a href="">Apply to get lnstant Pre-qualified Offers</a>
+</div>
+
+
+
+
+
+<section class="footer">
+   <div class="div footer-container container">
+      <div class="footer-box">
+         <a href="#" class="logo">Car<span>point</span></a>
+         <div class="social">
+            <a href="facebook.htm"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="google.html"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="instagram.html"><i class="fa-brands fa-instagram"></i></a>
+         </div>
+      </div>
+      <div class="footer-box">
+         <h3>Page</h3>
+         <a href="home.html">Home</a>
+         <a href="car.html">Cars</a>
+         <a href="bike.html">Bike</a>
+         <a href="#">Sales</a>
+      </div>
+
+      <div class="footer-box">
+         <h3>Lagal</h3>
+         <a href="#">Privacy</a>
+         <a href="#">Refund policy</a>
+         <a href="#">Cookie policy</a>
+      </div>
+
+      <div class="footer-box">
+         <h3>Countries</h3>
+         <p>India</p>
+         <p>Usa</p>
+         <p>Japan</p>
+         <p>Germany</p>
+      </div>
+
+      <div class="footer-box">
+         <div class="footer-box">
+            <h3>Name Of Developer And Contact US</h3>
+            <p>Mr. Rohan raj, Mob-no.<a href="#">(8603684253)</a></p>
+            <p>Mr. Kunal kumar, Mob-no.<a href="#">(8809260860)</a></p>
+            <p>Mr. kumar gaurav, Mob-no.<a href="#">(735257119)</a></p>
+   </div>
+</section>
+<div class="copyright">
+   <p>$#172; Carpoint All Right Reserved</p>
+</div>
+<script type="text/javascript" src="flip.js"></script>          
+</body>
+</html>
